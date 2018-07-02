@@ -34,7 +34,7 @@ setTimeout(function(){
 	 		activeCards.forEach(card=> card.classList.add("off"));
 	 		gameResult ++; // accumulates the result of found pairs
 
-	 		cards = cards.filter(card=> card.classList("off")) return; // takes out the pairs of the list, so that clicking on them has no effect
+	 		  cards = cards.filter(card =>!card.classList.contains("off"));// takes out the pairs of the list, so that clicking on them has no effect
 
 	 		if (gameResult === gamePairs) // this means a win 
 	 		{
